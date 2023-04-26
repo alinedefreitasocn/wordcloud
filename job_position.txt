@@ -1,0 +1,36 @@
+blueOASIS is a Portuguese R&D company that fosters the development of ground-breaking Offshore Renewable Energy, Ocean Cleaning and Clean Maritime solutions, using modern Industry 4.0 approaches, such as Data Science, Numerical Modelling, Potential and Viscous Flow (CFD), High-Performance Computing and Artificial Intelligence tools. It is formed by a young multicultural team with more than 50 years of gathered knowledge and experience on Aerospace, Mechanical, Naval, Maritime Engineering and Environmental Impact issues. blueOASIS cooperates tightly with major universities and research institutes in Europe. Their tools, programming, CFD, AI skills and HPC knowledge/facilities makes them an asset for any Ocean Sustainability project, and a unique company in Portugal.
+Job Context
+Due to newly acquired Renewable Energy research projects, blueOASIS team must grow. Therefore, we are looking for talented, hardworking, environmental aware, with high computer skills engineers and researchers. The work to be accomplished is related to the design and analysis of Offshore Renewable Energy solutions, where knowledge of Aerodynamics, Hydrodynamics, Structural Mechanics and Computer models are crucial. The candidate is supposed to work at blueOASIS offices rather in Ericeira or Lisbon, according to his/her preferences and project needs. Nevertheless, we are a hybrid-working promoting company. The candidate must start before September 2023.
+What do we expect from you?
+The following requirements are expected:
+Aerospace or Mechanical or Naval/Ocean Engineer.
+MSc/PhD with thesis done on any of the blueOASIS relevant topics (see www.blueoasis.pt).
+Knowledge of CFD or AI, CAD/Rhino, programming skills (Python, Fortran or C/C++).
+Visualization, HPC skills.
+Or
+
+Oceanography, Naval, Ocean Engineer (but others are welcome).
+Knowledge on oceanographic tools Mohid, Delft3D, Swan, SWASH, WRF (or similar).
+Knowledge on Satellite ecosystem.
+Knowledge of Linux, HPC, GitHub and Git is a plus point.
+Mainly to work on Renewable Energy and Ocean Sustainability concepts.
+
+What do we offer?
+
+The following remuneration benefits are considered:
+
+14x salaries.
+Salary range of 1500-2600 Euro gross, depending on experience, MSc or PhD and skills.
+Extra private health insurance.
+Extra food allowance (more than 180Euros/month net).
+Flexible working hours.
+Hybrid (office & remotely) working.
+28 days of vacation.
+International environment. English is blueOASIS working language and the team is multi-cultural.
+
+How should you apply?
+
+To apply for this job please send to info@blueoasis.pt the following:
+
+Your CV.
+Your university grades.
