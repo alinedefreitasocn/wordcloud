@@ -75,11 +75,31 @@ for word, experience in my_words_dict.items():
 #     txt_string = txt_file.read()
 colors = ['#606C38', '#283618', '#DDA15E', '#BC6C25']
 # creating the wordcloud
-wc = WordCloud(background_color="white",
-               max_words=700000000,
+# wc = WordCloud(background_color="white",
+#                max_words=700000000,
+#                 contour_width=3,
+#                 min_font_size=8,
+#                 colormap='gist_earth',
+#                 prefer_horizontal=1,
+#                 #Importance of relative word frequencies for font-size.
+#                 # With relative_scaling=0, only word-ranks are considered.
+#                 # With relative_scaling=1, a word that is twice as frequent
+#                 # will have twice the size. If you want to consider the word
+#                 # frequencies and not only their rank, relative_scaling around
+#                 # .5 often looks good.
+#                 relative_scaling=1,
+#                 # Whether to repeat words and phrases until
+#                 # max_words or min_font_size is reached.
+#                 repeat=True,
+#                 width=600,
+#                 height=900)
+
+# For github
+wc_git = WordCloud(background_color="black",
+               max_words=7000000,
                 contour_width=3,
                 min_font_size=8,
-                colormap='gist_earth',
+                colormap='plasma',
                 prefer_horizontal=1,
                 #Importance of relative word frequencies for font-size.
                 # With relative_scaling=0, only word-ranks are considered.
@@ -91,16 +111,16 @@ wc = WordCloud(background_color="white",
                 # Whether to repeat words and phrases until
                 # max_words or min_font_size is reached.
                 repeat=True,
-                width=600,
-                height=900)
+                width=800,
+                height=400)
 
-wc.generate_from_frequencies(my_words_dict)
+wc_git.generate_from_frequencies(my_words_dict)
 
 
 # wordcloud = WordCloud(background_color='white', repeat=False).generate(my_words_string)
 # wordcloud = WordCloud(background_color='white', repeat=False).generate(txt_string)
 
 fig = plt.figure()
-plt.imshow(wc, interpolation="bilinear")
+plt.imshow(wc_git, interpolation="bilinear")
 plt.axis("off")
 plt.show()
