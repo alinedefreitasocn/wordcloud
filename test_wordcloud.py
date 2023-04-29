@@ -76,10 +76,11 @@ for word, experience in my_words_dict.items():
 colors = ['#606C38', '#283618', '#DDA15E', '#BC6C25']
 # creating the wordcloud
 wc = WordCloud(background_color="white",
-               max_words=7000000,
+               max_words=700000000,
                 contour_width=3,
                 min_font_size=8,
                 colormap='gist_earth',
+                prefer_horizontal=1,
                 #Importance of relative word frequencies for font-size.
                 # With relative_scaling=0, only word-ranks are considered.
                 # With relative_scaling=1, a word that is twice as frequent
@@ -89,7 +90,9 @@ wc = WordCloud(background_color="white",
                 relative_scaling=1,
                 # Whether to repeat words and phrases until
                 # max_words or min_font_size is reached.
-                repeat=True)
+                repeat=True,
+                width=600,
+                height=900)
 
 wc.generate_from_frequencies(my_words_dict)
 
