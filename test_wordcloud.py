@@ -14,21 +14,21 @@ import matplotlib.pyplot as plt
 # white. You can get the nparray straight from the image. Doesn need to
 # make the for transformation
 # getting my png file
-leaf_mask = np.array(Image.open('/home/aline/code/personal_projects/wordcloud/masks/susteinability_black_white.png'))
-leaf_mask = np.array(Image.open('/home/aline/code/personal_projects/wordcloud/masks/big_one_leaf.png'))
+# leaf_mask = np.array(Image.open('/home/aline/code/personal_projects/wordcloud/masks/susteinability_black_white.png'))
+# leaf_mask = np.array(Image.open('/home/aline/code/personal_projects/wordcloud/masks/big_one_leaf.png'))
 
 #########################################################################
 
 # trying to work on my image
-leaf_image = Image.open('/home/aline/code/personal_projects/wordcloud/masks/big_one_leaf.png')
+# leaf_image = Image.open('/home/aline/code/personal_projects/wordcloud/masks/big_one_leaf.png')
 
 # for when your image is already pure black and white
 # function to transform zero values into 255 (white)
-def transform_format(val):
-    if val != 0:
-        return 255
-    else:
-        return val
+# def transform_format(val):
+#     if val != 0:
+#         return 255
+#     else:
+#         return val
 
 # Transform your mask into a new one that will work with the function:
 # transformed_leaf_mask = np.ndarray((leaf_mask.shape[0],
@@ -43,10 +43,27 @@ def transform_format(val):
 my_words_dict = {'Python ': 100,
                  'SQL ': 80,
                  'Git ': 80,
-                 'Jupyter notebook': 50,
+                 'Jupyter notebook': 30,
+                 'VS Code': 80,
                  'Time-series Analysis': 100,
                  'Environmental Analysis': 100,
                  'Statistical Analysis': 90,
+                 #
+                 'Linear Regression': 80,
+                 'Logistic Regression': 60,
+                 'NLP': 30,
+                 'Deep Learning': 30,
+                 'Tabular Data': 80,
+                 #
+                 'seaborn': 80,
+                 'scikit learn': 60,
+                 'matplotlib': 90,
+                 'pandas': 100,
+                 'numpy': 90,
+                 'TensorFlow': 50,
+                 'Keras': 50,
+                 'Google Cloud': 50,
+                 'Docker': 50,
                  #
                  'English ': 100,
                  'Spanish ': 70,
@@ -60,9 +77,8 @@ my_words_dict = {'Python ': 100,
                  'Self-learner ': 100,
                  'Comunication ': 90,
                  'Adaptability': 100,
-                 'Resiliente': 100,
+                 'Resilient': 100,
                  'Multi-disciplinary': 100
-
 }
 
 my_words_string = ''
@@ -120,7 +136,8 @@ wc_git.generate_from_frequencies(my_words_dict)
 # wordcloud = WordCloud(background_color='white', repeat=False).generate(my_words_string)
 # wordcloud = WordCloud(background_color='white', repeat=False).generate(txt_string)
 
-fig = plt.figure()
+fig = plt.figure(figsize=(9,5), dpi=300)
 plt.imshow(wc_git, interpolation="bilinear")
 plt.axis("off")
-plt.show()
+plt.show(block=False)
+plt.savefig('github_wordcloud.jpg', dpi = 300, bbox_inches='tight')
