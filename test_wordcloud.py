@@ -9,6 +9,7 @@ from os import path
 from PIL import Image
 from wordcloud import WordCloud, STOPWORDS
 import matplotlib.pyplot as plt
+from matplotlib.colors import LinearSegmentedColormap
 
 # It worked with the image Irina changed for me because it was pure black and
 # white. You can get the nparray straight from the image. Doesn need to
@@ -89,7 +90,12 @@ for word, experience in my_words_dict.items():
 # string_file = '/home/aline/code/personal_projects/wordcloud/job_position.txt'
 # with open(string_file) as txt_file:
 #     txt_string = txt_file.read()
-colors = ['#606C38', '#283618', '#DDA15E', '#BC6C25']
+# colors = ['#4f772d', '#90a955', '#ecf39e', '#f0ead2', '#dde5b6', '#adc178']
+colors = [(79, 119, 45), (144, 169, 85), 
+          (236, 243, 158), (240, 234, 210),(173, 193, 120)
+]
+cmap = LinearSegmentedColormap.from_list('aline_map', colors)
+#colors = ['#606C38', '#283618', '#DDA15E', '#BC6C25']
 # creating the wordcloud
 # wc = WordCloud(background_color="white",
 #                max_words=700000000,
@@ -115,7 +121,7 @@ wc_git = WordCloud(background_color="black",
                max_words=7000000,
                 contour_width=3,
                 min_font_size=8,
-                colormap='plasma',
+                colormap='YlGn',
                 prefer_horizontal=1,
                 #Importance of relative word frequencies for font-size.
                 # With relative_scaling=0, only word-ranks are considered.
@@ -139,5 +145,5 @@ wc_git.generate_from_frequencies(my_words_dict)
 fig = plt.figure(figsize=(9,5), dpi=300)
 plt.imshow(wc_git, interpolation="bilinear")
 plt.axis("off")
-plt.show(block=False)
-plt.savefig('github_wordcloud.jpg', dpi = 300, bbox_inches='tight')
+# plt.show(block=False)
+plt.savefig('github_wordcloud.png', dpi = 300, bbox_inches='tight')
